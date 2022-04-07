@@ -1,0 +1,20 @@
+body {
+  min-height: 2000px;
+}
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #c1d8ff;
+}
+
+#Work-Experience {
+  background-color: #c1d8ff;
+}
+
+section {
+  padding-top: 4rem;
+}
+
+.spinner{
+  width: 15px;
+  border: 1px solid transparent
+}
