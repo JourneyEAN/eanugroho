@@ -17,6 +17,14 @@
     <title>My Portfolio | Eko Ari Nugroho</title>
   </head>
   <body id="home">
+  <!-- popup -->
+    <div class="popup">
+      <div class="popup_content">
+          <img class="popup_image" src="img/popup/20220502_004902.png" width="300px" alt="Popup">
+          <img class="popup_close" src="img/popup/icon-close.png" alt="Close">
+      </div>
+  </div>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-sm fixed-top">
       <div class="container">
@@ -235,6 +243,20 @@
           })
           .catch(error => console.error('Error!', error.message))
       })
+
+      var popup = document.querySelector(".popup")
+        ;
+        var close = document.querySelector(".popup_close");
+        setTimeout(function(){
+            popup.classList.add("popup--show");
+        },1000);
+
+        close.addEventListener("click",function(){
+            console.log("kil dismis")
+            popup.classList.remove("popup--show");
+            popup.classList.add("popup--close");
+            alert("Mohon maaf lahir batin atas segala kekhilafan dan kesalahan @eanugroho & family");
+        })
     </script>
   </body>
 </html>
