@@ -155,4 +155,6 @@ section {
 .popup--close{
   display: none;
   transition: all .2s ease-out;
+  color: #000000;
+
 }
